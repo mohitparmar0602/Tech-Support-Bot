@@ -1,7 +1,11 @@
+import os
 from google import genai
+from dotenv import load_dotenv
 
-# Replace with your actual fresh API key
-client = genai.Client(api_key="AIzaSyBXm6m46MfzbnJrttyktKQH7459vBXlH-Y")
+load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
+
+client = genai.Client(api_key=api_key)
 
 print("Available Models:")
 for model in client.models.list():
