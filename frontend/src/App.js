@@ -1,10 +1,9 @@
 import React from "react";
 import ChatBot from "./components/ChatBot.jsx";
 
-
 function App() {
   return (
-    <div>
+    <div className="App">
       <ChatBot />
     </div>
   );

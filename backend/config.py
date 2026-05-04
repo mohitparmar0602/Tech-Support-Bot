@@ -1,4 +1,10 @@
-DB_HOST = "localhost"
-DB_USER = "root"
-DB_PASSWORD = "123456"  # Replace with your MySQL password
-DB_NAME = "tech_support_bot"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_USER = os.getenv("DB_USER", "root")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "123456")
+DB_NAME = os.getenv("DB_NAME", "tech_support_bot")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")

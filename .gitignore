@@ -1,0 +1,44 @@
+# Node
+node_modules/
+npm-debug.log
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+venv/
+.venv/
+
+# Environments
+.env
+.env.*
+.venv
+env/
+venv/
+ENV/
+
+# VS Code
+.vscode/
+
+# Build
+dist/
+build/

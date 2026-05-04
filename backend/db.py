@@ -10,8 +10,8 @@ def connect_db():
             database=DB_NAME,
             cursorclass=pymysql.cursors.DictCursor
         )
-        print("✅ Database connected successfully!")
+        print("Database connected successfully!")
         return connection
     except Exception as e:
-        print(f"❌ Database connection failed: {e}")
+        print(f"Database connection failed: {e}")
         return None
